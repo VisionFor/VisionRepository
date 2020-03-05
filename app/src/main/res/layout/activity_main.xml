@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.vision.seekbar.VisionProgressBar
+        android:id="@+id/visionSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        app:degreeTextSize="14sp"
+        app:isAutoSeekBoundary="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:limitTouchRange="false"
+        app:maxProgress="15"
+        app:minProgress="0"
+        app:progress="1.35"
+        app:progressColor="@color/yellow"
+        app:progressLabelColor="@color/blue"
+        app:progressLabelShape="rectangle"
+        app:progressLabelStyle="stork"
+        app:progressTextColor="@android:color/white"
+        app:progressTextSize="12sp"
+        app:secondaryProgressColor="@android:color/white"
+        app:showDegree="true"
+        app:showDegreeText="true"
+        app:subsectionCount="10"
+        app:isStepByStep="false"
+        app:thumbBorderColor="@color/yellow"
+        app:thumbBorderRadius="7dp"
+        app:thumbColor="@android:color/white"
+        app:thumbRadius="15dp" />
+
+    <Button
+        android:id="@+id/btnGetProgressRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/str_get_percent_rate_of_progress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visionSeekBar" />
+
+    <Button
+        android:id="@+id/btnGetProgressValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/str_get_progress_value"
+        app:layout_constraintStart_toStartOf="@+id/btnGetProgressRate"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetProgressRate" />
+
+    <TextView
+        android:id="@+id/tvProgressRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGetProgressRate"
+        app:layout_constraintStart_toEndOf="@+id/btnGetProgressRate"
+        app:layout_constraintTop_toTopOf="@+id/btnGetProgressRate"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <TextView
+        android:id="@+id/tvProgressValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGetProgressValue"
+        app:layout_constraintStart_toStartOf="@+id/tvProgressRate"
+        app:layout_constraintTop_toTopOf="@+id/btnGetProgressValue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

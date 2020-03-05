@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VisionProgressBar">
+        <!--
+        hight of progress
+        进度条的高度-->
+        <attr name="progressHeight" format="reference|dimension" />
+        <!--
+        color of progress
+        进度条的颜色-->
+        <attr name="progressColor" format="reference|color" />
+        <!--
+        secondary color of progress
+        二级进度条的颜色-->
+        <attr name="secondaryProgressColor" format="reference|color" />
+        <!--
+        color of thumb
+        滑块的颜色-->
+        <attr name="thumbColor" format="reference|color" />
+        <!--
+        border-color of thumb
+        滑块的边框颜色-->
+        <attr name="thumbBorderColor" format="reference|color" />
+        <!--
+        radius of thumb
+        滑块的半径-->
+        <attr name="thumbRadius" format="reference|dimension" />
+        <!--
+        radius of thumb's border
+        滑块的边框半径-->
+        <attr name="thumbBorderRadius" format="reference|dimension" />
+        <!--
+        initial progress value
+        初始进度值-->
+        <attr name="progress" format="reference|float" />
+        <!--
+        min value of progress
+        最小的进度值-->
+        <attr name="minProgress" format="reference|float" />
+        <!--
+        max value of progress
+        最大进度值-->
+        <attr name="maxProgress" format="reference|float" />
+
+        <!--
+        how many subsection do you want to divide
+        刻度分为几段-->
+        <attr name="subsectionCount" format="reference|integer" />
+
+        <!--
+       text-size of degree
+       刻度字体大小-->
+        <attr name="degreeTextSize" format="reference|dimension" />
+
+        <!--
+        text-color of degree
+        刻度值的字体颜色-->
+        <attr name="degreeTextColor" format="reference|color" />
+
+        <!--
+        show degree-vlue or not
+        是否显示刻度值-->
+        <attr name="showDegreeText" format="reference|boolean" />
+        <!--
+        show degree or not
+        是否显示刻度-->
+        <attr name="showDegree" format="reference|boolean" />
+        <!--
+        limited the touch range of progressbar
+        是否需要限制触摸的范围-->
+        <attr name="limitTouchRange" format="reference|boolean" />
+
+        <!--
+        text-color of progress
+        进度值的字体颜色-->
+        <attr name="progressTextColor" format="reference|color" />
+        <!--
+        text-size of progress
+        进度值的字体大小-->
+        <attr name="progressTextSize" format="reference|dimension" />
+        <!--
+        style of label which wrap progress-text
+        包裹进度值标签框的样式-->
+        <attr name="progressLabelStyle" format="enum">
+            <!--
+            fill style
+            填充-->
+            <enum name="fill" value="0" />
+            <!--
+            stork style
+            描边-->
+            <enum name="stork" value="1" />
+        </attr>
+        <!--
+        shape of label which wrap progress-text
+        包裹进度值标签框的形状-->
+        <attr name="progressLabelShape" format="enum">
+            <!--
+            rectangle
+            矩形-->
+            <enum name="rectangle" value="0" />
+            <!--
+            cone
+            圆锥-->
+            <enum name="cone" value="1" />
+        </attr>
+        <!--
+        color of label which wrap progress-text
+        进度值标签框的颜色-->
+        <attr name="progressLabelColor" format="reference|color" />
+        <!--
+        is auto seek boundary
+        if true,progress will auto move to nearest boundary when your finger move away screen
+        是否自动搜索边界，设置为true则会自动跳到最近的那个点-->
+        <attr name="isAutoSeekBoundary" format="reference|boolean" />
+        <!--
+        是否一步一步的选中-->
+        <attr name="isStepByStep" format="reference|boolean" />
+
+    </declare-styleable>
+</resources>

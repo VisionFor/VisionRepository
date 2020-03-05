@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VisionSeekBar</string>
+    <string name="str_get_percent_rate_of_progress">获取进度百分比</string>
+    <string name="str_get_progress_value">获取进度值</string>
+</resources>
